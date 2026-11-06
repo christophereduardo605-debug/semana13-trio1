@@ -1,3 +1,4 @@
+
 {
   "info": {
     "name": "Semana 13 – API",
@@ -20,6 +21,9 @@
               "})",
               "pm.test(\"O nome é Leanne Graham\", () => {",
               "  pm.expect(pm.response.json().name).to.eql(\"Leanne Graham\")",
+              "})",
+              "pm.test(\"O email do usuário é válido\", () => {",
+              "  pm.expect(pm.response.json().email).to.include(\"@\")",
               "})",
               "pm.test(\"O corpo segue o JSON Schema\", () => {",
               "  const schema = {",
